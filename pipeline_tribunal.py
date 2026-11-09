@@ -155,7 +155,11 @@ class TribunalKubeflowFlow(FlowSpec):
             mlflow.log_param("n_estimators", n_estimators)
             mlflow.log_param("max_depth", max_depth)
             mlflow.log_metric("f1_macro", f1_macro)
-            mlflow.sklearn.log_model(clf, "random_forest_model")
+            mlflow.sklearn.log_model(
+                clf,
+                name="random_forest_model",
+                skops_trusted_types=["sklearn.tree._tree.Tree"],
+            )
 
             # Monitoramento de Data Drift com Evidently
             drift_report = Report(metrics=[DataDriftPreset()])

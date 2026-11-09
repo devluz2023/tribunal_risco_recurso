@@ -1,5 +1,7 @@
 # Sistema MLOps de Classificação de Risco de Recurso Protelatório
 
+![Arquitetura do Projeto](https://github.com/devluz2023/tribunal_risco_recurso/blob/main/arquitetura.jpeg)
+
 Este repositório contém uma solução completa de Engenharia de Dados e MLOps desenvolvida para um tribunal com o objetivo de classificar processos judiciais em três categorias de risco de recurso protelatório (**baixo, médio e alto**), atendendo a rigorosos padrões de explicabilidade (XAI) e conformidade com a LGPD.
 
 ---

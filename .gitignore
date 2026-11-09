@@ -55,6 +55,7 @@ data/registry.pb
 
 # MLflow e Outputs de MLOps
 mlruns/
+.metaflow/
 htmlcov/
 .pytest_cache/
 .tox/

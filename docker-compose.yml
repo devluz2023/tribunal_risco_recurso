@@ -23,7 +23,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.mlflow
-    image: tribunal-mlflow:2.11.1
+    image: tribunal-mlflow:3.18.0
     container_name: ml_mlflow
     ports:
       - "5001:5000"
