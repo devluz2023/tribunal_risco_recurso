@@ -1,0 +1,122 @@
+[MFLOG|0|2026-11-09T16:15:03.582565Z|runtime|eee4587b-8ef0-41a1-9d79-e5d491f674a4]2026/11/09 13:15:03 INFO mlflow.tracking.fluent: Experiment with name 'tribunal_risco_recurso' does not exist. Creating a new experiment.
+[MFLOG|0|2026-11-09T16:15:10.703642Z|runtime|7df8119f-0d7b-41ac-a7bb-832c790ff3e6]2026/11/09 13:15:10 WARNING mlflow.models.model: `artifact_path` is deprecated. Please use `name` instead.
+[MFLOG|0|2026-11-09T16:15:11.187652Z|runtime|26df2f63-a02e-427f-b2ea-b021c6dd738f]<flow TribunalKubeflowFlow step train_model> failed:
+[MFLOG|0|2026-11-09T16:15:11.325135Z|runtime|5f1e6c2f-6a02-4365-ba20-818643018b48]    Internal error
+[MFLOG|0|2026-11-09T16:15:11.333750Z|runtime|b85429b8-c4c4-486b-ba33-d910b98398d8]Traceback (most recent call last):
+[MFLOG|0|2026-11-09T16:15:11.336103Z|runtime|7090e76e-1968-4dce-b760-8d35466712ce]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/cli.py", line 739, in main
+[MFLOG|0|2026-11-09T16:15:11.336823Z|runtime|7c72ba89-8a42-446f-8cd2-fcb3cc03a12d]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2026-11-09T16:15:11.337250Z|runtime|40fb3e09-eae7-4063-819e-935358918153]    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:11.340089Z|runtime|92b78d44-e4db-4786-a3a9-133ec91f194e]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2026-11-09T16:15:11.346905Z|runtime|6b637ca7-dda3-4cbd-b47d-6ce4c8a4fe4c]    return self.main(args, kwargs)
+[MFLOG|0|2026-11-09T16:15:13.569399Z|runtime|f3f1d248-a91a-464f-bbb2-7ed3a4d139d8]           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.577499Z|runtime|6a79f5f6-5b79-4eb5-b493-6a3d80721027]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2026-11-09T16:15:13.578221Z|runtime|47d88632-622b-4a86-bed3-9da54d87b1d2]    rv = self.invoke(ctx)
+[MFLOG|0|2026-11-09T16:15:13.578416Z|runtime|51187336-cd60-4de7-b9ba-8857ecb575cc]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2026-11-09T16:15:13.580013Z|runtime|c74754a1-4526-4b7a-99ed-ecb789bdb05d]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2026-11-09T16:15:13.581327Z|runtime|91622079-a068-4235-9ae7-f2482cb26181]                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.581509Z|runtime|f218b271-bbcc-4ef7-8754-10e298967b93]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2026-11-09T16:15:13.582532Z|runtime|4ebe0ba7-3acc-4027-b67d-e50107df2722]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2026-11-09T16:15:13.582685Z|runtime|2bbbb664-903a-4d29-b0b4-819bec3130d9]           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.583304Z|runtime|d6921201-79ed-44a5-8e9f-cc9576d82f51]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2026-11-09T16:15:13.584141Z|runtime|1ef3ebb9-f9f9-4ff8-9594-9b3553b8e15e]    return callback(args, kwargs)
+[MFLOG|0|2026-11-09T16:15:13.585511Z|runtime|abf32419-3956-4597-9d76-1b8fee2f74c7]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2026-11-09T16:15:13.586842Z|runtime|237e41bd-1688-4b4b-9bcd-3b5f42d2d555]    return func(args, kwargs)
+[MFLOG|0|2026-11-09T16:15:13.587412Z|runtime|1c8dea61-e6d9-4dee-a54d-5c927afd9dec]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2026-11-09T16:15:13.588292Z|runtime|14446463-da0a-48ef-a671-ab3c73ac35e9]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2026-11-09T16:15:13.588397Z|runtime|d8de03f2-421d-486e-9faf-aff1db74b238]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/cli_components/step_cmd.py", line 171, in step
+[MFLOG|0|2026-11-09T16:15:13.588858Z|runtime|33753bba-9263-45de-9bb4-5790dcad3b47]    task.run_step(
+[MFLOG|0|2026-11-09T16:15:13.588977Z|runtime|7df4b4bf-6481-4475-8135-51906adce7ee]    ~~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:15:13.589008Z|runtime|f6408c30-2da4-4eeb-b5ad-1a911c8df14e]        step_name,
+[MFLOG|0|2026-11-09T16:15:13.589071Z|runtime|4d8dbaa2-86c5-4d8a-8d68-6bfb1d1dcae1]        ^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.590106Z|runtime|4100b519-7097-4dcf-88bb-850c952f5864]    ...<6 lines>...
+[MFLOG|0|2026-11-09T16:15:13.590727Z|runtime|2ca88782-ee86-4265-83dd-3e886913cd49]        max_user_code_retries,
+[MFLOG|0|2026-11-09T16:15:13.591290Z|runtime|03b59b43-1d4a-4478-a469-dbf02b0e8e40]        ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.591377Z|runtime|8097d6c2-8305-42d8-80db-ae804904c840]    )
+[MFLOG|0|2026-11-09T16:15:13.591596Z|runtime|1d55dec7-e1a3-436c-8554-e473a2351ce8]    ^
+[MFLOG|0|2026-11-09T16:15:13.591624Z|runtime|2c345a93-8a17-4c43-8f0b-953b689f2252]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/task.py", line 938, in run_step
+[MFLOG|0|2026-11-09T16:15:13.594890Z|runtime|2a79dd25-27f9-46d7-883e-56eef254db16]    self._exec_step_function(step_func, orig_step_func)
+[MFLOG|0|2026-11-09T16:15:13.595775Z|runtime|ce35eff2-1d32-4f76-9e5b-83887a6729ac]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.596250Z|runtime|40349896-e958-4c51-b252-85f343775e5d]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/task.py", line 147, in _exec_step_function
+[MFLOG|0|2026-11-09T16:15:13.596389Z|runtime|c9097b06-841d-4087-a0d9-bccfeec55224]    raise raised_exception
+[MFLOG|0|2026-11-09T16:15:13.596484Z|runtime|3b84e5d1-4846-46ef-861d-59b40686b8c0]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/task.py", line 113, in _exec_step_function
+[MFLOG|0|2026-11-09T16:15:13.596580Z|runtime|ae7f3ff1-509a-40c1-bd55-27140db4b6df]    step_function()
+[MFLOG|0|2026-11-09T16:15:13.596750Z|runtime|997d0b2b-a681-4907-ae37-9e6351bdbc47]    ~~~~~~~~~~~~~^^
+[MFLOG|0|2026-11-09T16:15:13.597315Z|runtime|cc699965-9fae-4e29-ac72-97c690a51266]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/pipeline_tribunal.py", line 158, in train_model
+[MFLOG|0|2026-11-09T16:15:13.601980Z|runtime|1c2e32e0-494a-45e6-a6dd-af7f869c78e0]    mlflow.sklearn.log_model(clf, "random_forest_model")
+[MFLOG|0|2026-11-09T16:15:13.603166Z|runtime|d786943d-881d-474a-bc00-c10455b5f0bb]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.603424Z|runtime|3283f879-1f65-4107-b02f-1ae4f117ce4b]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/sklearn/__init__.py", line 497, in log_model
+[MFLOG|0|2026-11-09T16:15:13.603514Z|runtime|60abb2c9-fbfc-4ee5-8e05-5682e3a8cd64]    return Model.log(
+[MFLOG|0|2026-11-09T16:15:13.604035Z|runtime|edabab26-fa82-4f27-b5d9-b8000e793459]           ~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:15:13.604236Z|runtime|c878ad66-d33b-441e-b08d-8d709da2cc66]        artifact_path=artifact_path,
+[MFLOG|0|2026-11-09T16:15:13.604395Z|runtime|88747242-8415-44e5-9731-0f1bf1054f66]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.605219Z|runtime|0c995184-718b-4f31-91de-d267346f6442]    ...<21 lines>...
+[MFLOG|0|2026-11-09T16:15:13.605377Z|runtime|09bb27a9-6660-4507-9f17-fe1b139a14f7]        kwargs,
+[MFLOG|0|2026-11-09T16:15:13.605486Z|runtime|80a6b95f-6368-4edf-b0df-1252e5eb9a51]        ^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.605858Z|runtime|eaa429b0-3044-45d1-b125-fefc199d5d1e]    )
+[MFLOG|0|2026-11-09T16:15:13.605904Z|runtime|43f5244e-1f57-4951-87e8-b56024fa7848]    ^
+[MFLOG|0|2026-11-09T16:15:13.605932Z|runtime|bacc40bc-a567-431d-96a4-a0434bf3b52a]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/telemetry/track.py", line 32, in wrapper
+[MFLOG|0|2026-11-09T16:15:13.605972Z|runtime|cdc64cc7-7c42-4ace-8544-1f7647285eae]    result = func(args, kwargs)
+[MFLOG|0|2026-11-09T16:15:13.606004Z|runtime|0840f869-fd7e-409c-aa16-ddee78e1760f]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/models/model.py", line 1172, in log
+[MFLOG|0|2026-11-09T16:15:13.606027Z|runtime|7b5ccfa7-d5c2-42d5-8296-f94cc258029d]    model = _create_logged_model(
+[MFLOG|0|2026-11-09T16:15:13.606048Z|runtime|83458365-1075-43c0-895b-03e43d240f02]        # TODO: Update model name
+[MFLOG|0|2026-11-09T16:15:13.606492Z|runtime|abf100b2-f28d-48f6-b4d9-de1bdf0c6246]    ...<9 lines>...
+[MFLOG|0|2026-11-09T16:15:13.606871Z|runtime|f5370a73-9152-4a6a-9f0c-64dcf93d1704]        uses_uv=kwargs.get("uv_project_path") is not None or _is_uv_auto_detected(),
+[MFLOG|0|2026-11-09T16:15:13.606898Z|runtime|0979dfea-cad5-4297-96fc-7a353b145b1b]    )
+[MFLOG|0|2026-11-09T16:15:13.606920Z|runtime|81b7d8c2-6f06-4f55-89ac-3ab882a0df3b]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/tracking/fluent.py", line 2688, in _create_logged_model
+[MFLOG|0|2026-11-09T16:15:13.606960Z|runtime|2dc1975b-fddb-4ce6-8633-acc610c54cfc]    return MlflowClient()._create_logged_model(
+[MFLOG|0|2026-11-09T16:15:13.606982Z|runtime|62f42e8b-9378-4feb-8f4c-643b83025963]           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:15:13.607006Z|runtime|f18aa621-c75c-4593-9fa3-4684dd8c77d8]        experiment_id=experiment_id,
+[MFLOG|0|2026-11-09T16:15:13.607045Z|runtime|07945032-3012-422e-8ee9-65e20c399355]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.610694Z|runtime|fa97afee-747d-4647-a2f0-a403099a0403]    ...<7 lines>...
+[MFLOG|0|2026-11-09T16:15:13.610989Z|runtime|13ec7a8f-4a73-46ca-8de5-b1399daf4764]        uses_uv=uses_uv,
+[MFLOG|0|2026-11-09T16:15:13.611110Z|runtime|55e452df-8837-460c-b461-d75aec9d18cb]        ^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.611312Z|runtime|7a53fcc6-f449-4c26-9276-51ce0987a4fc]    )
+[MFLOG|0|2026-11-09T16:15:13.611442Z|runtime|72a28367-2560-4d61-a286-3045d55df313]    ^
+[MFLOG|0|2026-11-09T16:15:13.611521Z|runtime|41803774-932f-428c-a14c-e27d3ca80624]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/tracking/client.py", line 5924, in _create_logged_model
+[MFLOG|0|2026-11-09T16:15:13.612101Z|runtime|544f0424-b44f-48d8-940c-b9619deec7ea]    return self._tracking_client.create_logged_model(
+[MFLOG|0|2026-11-09T16:15:13.612200Z|runtime|cc20e4d3-8684-4666-a2c2-0ca6b8c21f37]           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:15:13.612282Z|runtime|dd6bbfaf-68b3-443a-bd10-ba2e1fa18beb]        experiment_id=experiment_id,
+[MFLOG|0|2026-11-09T16:15:13.612360Z|runtime|eefe2871-4094-486d-b250-aa9c7d67e4e1]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.612436Z|runtime|f54fbdd4-bb70-4b1f-96ce-cd5ce8c943d9]    ...<7 lines>...
+[MFLOG|0|2026-11-09T16:15:13.613062Z|runtime|7c498a09-7235-4d9a-9bae-254173df034d]        uses_uv=uses_uv,
+[MFLOG|0|2026-11-09T16:15:13.614317Z|runtime|efb06c2b-8219-4ef9-997a-09124c15ad4c]        ^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.614443Z|runtime|49f7655d-227a-45ba-bc46-705353f8255a]    )
+[MFLOG|0|2026-11-09T16:15:13.614524Z|runtime|633d63f0-79f4-4b1c-811c-29973f153851]    ^
+[MFLOG|0|2026-11-09T16:15:13.614603Z|runtime|83fa10b2-92f8-4b0e-a789-a165d11df664]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/telemetry/track.py", line 32, in wrapper
+[MFLOG|0|2026-11-09T16:15:13.614745Z|runtime|f6b77a3e-e612-4998-8000-722d6ae8fea0]    result = func(args, kwargs)
+[MFLOG|0|2026-11-09T16:15:13.614796Z|runtime|ee459bde-52af-4ad3-8bc1-a7952cd1fb0b]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/tracking/_tracking_service/client.py", line 878, in create_logged_model
+[MFLOG|0|2026-11-09T16:15:13.614851Z|runtime|213b1618-ec8e-42e4-9148-f053f3c1db45]    return self.store.create_logged_model(
+[MFLOG|0|2026-11-09T16:15:13.614879Z|runtime|9c0726f6-a514-470e-bd61-b975f07a72b5]           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:15:13.614903Z|runtime|287ad215-c770-49f1-b34a-b8583af1f9a2]        experiment_id=experiment_id,
+[MFLOG|0|2026-11-09T16:15:13.614925Z|runtime|8574c045-855d-4783-9334-b1a64bdf26c6]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.614982Z|runtime|8ac565b7-36ea-41fe-9850-a6a43a19fa8a]    ...<8 lines>...
+[MFLOG|0|2026-11-09T16:15:13.615009Z|runtime|7719d668-bc66-4d78-865a-73865ac8a721]        model_type=model_type,
+[MFLOG|0|2026-11-09T16:15:13.615038Z|runtime|58fea109-089b-4f0f-84c6-1b4f73dd546b]        ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:15:13.615063Z|runtime|5aeb4dd5-3059-42f1-be36-604e32d98353]    )
+[MFLOG|0|2026-11-09T16:15:13.615086Z|runtime|40103699-c832-4825-8554-5fc98d6828a6]    ^
+[MFLOG|0|2026-11-09T16:15:13.615134Z|runtime|6242698d-a700-4520-8496-567347f49ad0]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/store/tracking/rest_store.py", line 1619, in create_logged_model
+[MFLOG|0|2026-11-09T16:15:13.615194Z|runtime|f3b45b92-6991-4789-b772-92199602b872]    response_proto = self._call_endpoint(CreateLoggedModel, req_body)
+[MFLOG|0|2026-11-09T16:15:13.615226Z|runtime|818132a6-721b-4c37-a7b9-53710cd094a9]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/store/tracking/rest_store.py", line 275, in _call_endpoint
+[MFLOG|0|2026-11-09T16:15:13.615830Z|runtime|33be5659-e88d-49f8-beab-b9b06259ff92]    return call_endpoint(
+[MFLOG|0|2026-11-09T16:15:13.615861Z|runtime|ef969d39-0417-46e3-8a0f-a0f917ef23bf]        self.get_host_creds(),
+[MFLOG|0|2026-11-09T16:15:13.616156Z|runtime|77cbb1af-6371-42be-b714-75e739ad235b]    ...<4 lines>...
+[MFLOG|0|2026-11-09T16:15:13.616291Z|runtime|dd08b8a5-fc1a-4994-98c2-a47064576617]        retry_timeout_seconds=retry_timeout_seconds,
+[MFLOG|0|2026-11-09T16:15:13.616344Z|runtime|68b3570f-4d09-43fc-ba1f-248bd20ce866]    )
+[MFLOG|0|2026-11-09T16:15:13.616566Z|runtime|f56e4c0e-7a21-454c-8ce4-ba60306fc340]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/utils/rest_utils.py", line 758, in call_endpoint
+[MFLOG|0|2026-11-09T16:15:13.616602Z|runtime|fa1b2e9d-385b-42a7-8ec3-d5fff0cdbb38]    response = verify_rest_response(
+[MFLOG|0|2026-11-09T16:15:13.616629Z|runtime|11c9cf62-e0c1-47c8-b4e5-b992e23d17e7]        response,
+[MFLOG|0|2026-11-09T16:15:13.616770Z|runtime|b90277f7-aa47-4c70-b628-a12861f122d3]        endpoint,
+[MFLOG|0|2026-11-09T16:15:13.616954Z|runtime|23dd71b6-6e5a-448c-94b4-3209ed591b59]        expected_status=expected_status,
+[MFLOG|0|2026-11-09T16:15:13.617113Z|runtime|1e6c6db6-027b-4e76-bfdc-d87cbf22d76b]    )
+[MFLOG|0|2026-11-09T16:15:13.617193Z|runtime|ecbdc200-5eee-4fc4-88f3-948b7e0a1f80]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/utils/rest_utils.py", line 469, in verify_rest_response
+[MFLOG|0|2026-11-09T16:15:13.617270Z|runtime|d10425e5-4ee3-4c48-be67-b3341f078d77]    raise MlflowException(
+[MFLOG|0|2026-11-09T16:15:13.617347Z|runtime|a1f85327-5c2b-4d2a-9a3e-88320d5e5c96]    ...<4 lines>...
+[MFLOG|0|2026-11-09T16:15:13.617401Z|runtime|e08f2bac-00a4-4942-b7da-7272221ea1c4]    )
+[MFLOG|0|2026-11-09T16:15:13.617883Z|runtime|74b9d7fc-2175-46cc-b7f3-4e810a313198]mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/logged-models failed with error code 404 != 200. Response body: '<!doctype html>
+[MFLOG|0|2026-11-09T16:15:13.617917Z|runtime|75df639e-79ab-44e4-b7b6-8104f3e2e833]<html lang=en>
+[MFLOG|0|2026-11-09T16:15:13.617946Z|runtime|e81f16cb-bdba-4082-949e-48d1d1cf78ca]<title>404 Not Found</title>
+[MFLOG|0|2026-11-09T16:15:13.617978Z|runtime|98330e6f-9234-4e5c-9473-b6df15060a95]<h1>Not Found</h1>
+[MFLOG|0|2026-11-09T16:15:13.618005Z|runtime|26e16966-3a43-41bd-b9f6-82623c5992ab]<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+[MFLOG|0|2026-11-09T16:15:13.618027Z|runtime|c8278c97-dcaa-486f-876d-e55bf916adab]'
+[MFLOG|0|2026-11-09T16:15:13.618049Z|runtime|dbf56de1-3042-4081-a396-3b55b4277a47]
+[MFLOG|0|2026-11-09T16:15:13.622670Z|runtime|6972a413-669f-4e87-8142-1756cc5f98a9]Task failed.

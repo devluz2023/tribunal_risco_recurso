@@ -1,0 +1,21 @@
+# Machine Learning & Data Science
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# MLOps & Tracking
+mlflow>=2.11.1
+metaflow>=2.11.0
+
+# Feature Store
+feast>=0.35.0
+
+# Data Quality & Monitoring
+great-expectations>=1.0.0
+evidently>=0.7.0
+
+# Banco de dados e Ferramentas Auxiliares
+psycopg2-binary>=2.9.9
+faker>=22.0.0
+pyarrow>=14.0.0
+requests>=2.31.0

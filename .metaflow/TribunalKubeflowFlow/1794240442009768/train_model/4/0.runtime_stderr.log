@@ -1,0 +1,190 @@
+[MFLOG|0|2026-11-09T16:08:15.902047Z|runtime|30bc0862-b52f-4260-9801-94eb70bf80a9]2026/11/09 13:08:15 INFO mlflow.agent.hint: Load the `mlflow-trace-instrumentation` skill at /Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/assistant/skills/mlflow-trace-instrumentation/SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
+[MFLOG|0|2026-11-09T16:12:29.837892Z|runtime|94486acd-7b17-418f-95c3-408d2ad6ed1b]<flow TribunalKubeflowFlow step train_model> failed:
+[MFLOG|0|2026-11-09T16:12:30.216481Z|runtime|82cd5202-fcca-4d9f-9cdb-de0580a706ca]    Internal error
+[MFLOG|0|2026-11-09T16:12:30.236321Z|runtime|1d5c78b6-0808-4157-bc37-959508403626]Traceback (most recent call last):
+[MFLOG|0|2026-11-09T16:12:30.237935Z|runtime|1ab068bc-1008-49c3-9a77-76fe962923cf]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connection.py", line 239, in _new_conn
+[MFLOG|0|2026-11-09T16:12:30.238639Z|runtime|7b55c5ec-f0cf-431d-a457-1cb428e09316]    sock = connection.create_connection(
+[MFLOG|0|2026-11-09T16:12:30.239783Z|runtime|2af27cd8-b9bf-449d-8819-eaf5470c82c1]        (self._dns_host, self.port),
+[MFLOG|0|2026-11-09T16:12:30.241418Z|runtime|35cffaed-7e60-4252-96fa-206d673ff70e]    ...<2 lines>...
+[MFLOG|0|2026-11-09T16:12:30.245480Z|runtime|880438aa-db5d-45ad-b711-47c42e72e6ea]        socket_options=self.socket_options,
+[MFLOG|0|2026-11-09T16:12:30.248264Z|runtime|cbd33048-7d4c-4ea4-988d-cdf9bc6fe076]    )
+[MFLOG|0|2026-11-09T16:12:30.250251Z|runtime|c877c45a-68cd-42d2-b00c-383f6587b829]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+[MFLOG|0|2026-11-09T16:12:30.255256Z|runtime|f6e84470-2569-428e-bcf0-43ba4fdb6016]    raise err
+[MFLOG|0|2026-11-09T16:12:30.256659Z|runtime|8e8d48c1-2a28-4d0e-9bff-e0f3d8aee2cb]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+[MFLOG|0|2026-11-09T16:12:30.257564Z|runtime|c8bb13ad-d81b-41a1-95db-e6e67bd78c15]    sock.connect(sa)
+[MFLOG|0|2026-11-09T16:12:30.257611Z|runtime|cefccb4f-ad2b-4f32-bc52-21c6e5b16005]    ~~~~~~~~~~~~^^^^
+[MFLOG|0|2026-11-09T16:12:30.259634Z|runtime|cf0a3969-571c-4c5a-a8e6-dec96908559f]ConnectionRefusedError: [Errno 61] Connection refused
+[MFLOG|0|2026-11-09T16:12:30.263187Z|runtime|6504f11b-6433-4b1c-a03c-e99c0087db72]
+[MFLOG|0|2026-11-09T16:12:30.264432Z|runtime|bbb68508-5dbf-4119-bb0a-8cf41f4c52c1]The above exception was the direct cause of the following exception:
+[MFLOG|0|2026-11-09T16:12:30.266371Z|runtime|587580bf-00b9-4b02-b9e0-b20559ade24b]
+[MFLOG|0|2026-11-09T16:12:30.267064Z|runtime|a40c407e-f4f1-48f3-a2cf-afee6eac46a1]Traceback (most recent call last):
+[MFLOG|0|2026-11-09T16:12:30.268916Z|runtime|71e59392-544d-4ef0-8a4b-b8f140c44c73]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+[MFLOG|0|2026-11-09T16:12:30.269794Z|runtime|8f133d60-2fd3-4641-af5e-ab98565c33a1]    response = self._make_request(
+[MFLOG|0|2026-11-09T16:12:30.269892Z|runtime|ef5f1ff2-7500-4299-a3f3-8d69faa5659e]        conn,
+[MFLOG|0|2026-11-09T16:12:30.270986Z|runtime|4512901d-bfe3-407b-badc-54d6f370a0d0]    ...<10 lines>...
+[MFLOG|0|2026-11-09T16:12:30.271034Z|runtime|5fae4e0d-5f47-4577-beff-a1c99468784b]        response_kw,
+[MFLOG|0|2026-11-09T16:12:33.677438Z|runtime|32458351-07bd-4ba8-ba10-402721b57aa2]    )
+[MFLOG|0|2026-11-09T16:12:33.680462Z|runtime|2a42867e-ed4d-42f8-8e9d-9882ec43c489]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 499, in _make_request
+[MFLOG|0|2026-11-09T16:12:33.681611Z|runtime|f30af81a-d8d4-4033-8876-f80994e9e95d]    conn.request(
+[MFLOG|0|2026-11-09T16:12:33.682560Z|runtime|84a07a36-0f88-4e11-a83c-98d9ae0aebc8]    ~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:12:33.682607Z|runtime|c9f16a2b-1654-4252-9a5d-680cee3276b0]        method,
+[MFLOG|0|2026-11-09T16:12:33.684143Z|runtime|dffbf2ca-702f-40bb-9304-f6b3409833de]        ^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.684214Z|runtime|e8f3d470-d2b7-4670-8557-9011679e44c1]    ...<6 lines>...
+[MFLOG|0|2026-11-09T16:12:33.684639Z|runtime|d993c49e-c75b-4c5e-9b89-f9236c473457]        enforce_content_length=enforce_content_length,
+[MFLOG|0|2026-11-09T16:12:33.686755Z|runtime|543434a0-4191-45cc-9f0c-0e5eea1b33ed]        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.686810Z|runtime|617bad43-f859-454a-b5c9-58acf2b968fb]    )
+[MFLOG|0|2026-11-09T16:12:33.687194Z|runtime|997f1153-b83d-4b85-ad60-10ba530ee7b7]    ^
+[MFLOG|0|2026-11-09T16:12:33.687804Z|runtime|fa6681fd-3dc6-485a-8ef3-3fae88af1008]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connection.py", line 567, in request
+[MFLOG|0|2026-11-09T16:12:33.689224Z|runtime|bb35707c-b2b6-4508-bce3-da5dbff3d36f]    self.endheaders()
+[MFLOG|0|2026-11-09T16:12:33.691743Z|runtime|c467ad0a-781c-4c49-9a8b-158ceff35c58]    ~~~~~~~~~~~~~~~^^
+[MFLOG|0|2026-11-09T16:12:33.693686Z|runtime|9cc5ac80-17fa-461c-a57a-0bb641dfba03]  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 1333, in endheaders
+[MFLOG|0|2026-11-09T16:12:33.693724Z|runtime|bafefee0-4d4c-4e78-b928-893494a05080]    self._send_output(message_body, encode_chunked=encode_chunked)
+[MFLOG|0|2026-11-09T16:12:33.693752Z|runtime|85822ba4-7198-424d-a3e9-64588c715aa0]    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.694467Z|runtime|8d3a461f-f481-4ea6-9c7e-189f2e18eb44]  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 1093, in _send_output
+[MFLOG|0|2026-11-09T16:12:33.694509Z|runtime|365f0c29-3785-4cce-8416-4042c38b9da8]    self.send(msg)
+[MFLOG|0|2026-11-09T16:12:33.695097Z|runtime|4252b892-7be3-47f2-82d0-bad9bc5ccf89]    ~~~~~~~~~^^^^^
+[MFLOG|0|2026-11-09T16:12:33.696378Z|runtime|fc79be8a-966a-4259-88d8-eb0020136563]  File "/opt/homebrew/Cellar/python@3.13/3.13.3/Frameworks/Python.framework/Versions/3.13/lib/python3.13/http/client.py", line 1037, in send
+[MFLOG|0|2026-11-09T16:12:33.696825Z|runtime|d54ddf2d-3893-41bf-81b2-25259a4ce285]    self.connect()
+[MFLOG|0|2026-11-09T16:12:33.698699Z|runtime|235a8b36-0926-415b-afab-fa22ca5cf3fe]    ~~~~~~~~~~~~^^
+[MFLOG|0|2026-11-09T16:12:33.698736Z|runtime|1332678f-987a-4c37-a5f2-7b9f0153bbd4]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connection.py", line 398, in connect
+[MFLOG|0|2026-11-09T16:12:33.699266Z|runtime|af5be5ba-1fd8-4591-ba50-b9dfc6f90ddf]    self.sock = self._new_conn()
+[MFLOG|0|2026-11-09T16:12:33.699512Z|runtime|aacd1ba0-61f3-4f28-99df-8cacaaab5bda]                ~~~~~~~~~~~~~~^^
+[MFLOG|0|2026-11-09T16:12:33.699695Z|runtime|b622728e-6b1e-4bab-b07d-b8a76bf00a6c]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connection.py", line 254, in _new_conn
+[MFLOG|0|2026-11-09T16:12:33.699737Z|runtime|707fe43d-d9af-4883-9026-4c388e9fe477]    raise NewConnectionError(
+[MFLOG|0|2026-11-09T16:12:33.700565Z|runtime|1ef0e69d-180b-4662-bd45-8e11b63ad64a]        self, f"Failed to establish a new connection: {e}"
+[MFLOG|0|2026-11-09T16:12:33.700608Z|runtime|16abd6c7-1516-4726-a104-3a4cb165a5d8]    ) from e
+[MFLOG|0|2026-11-09T16:12:33.701160Z|runtime|0e745829-cba7-41f4-946b-9c234ee578fb]urllib3.exceptions.NewConnectionError: HTTPConnection(host='localhost', port=5001): Failed to establish a new connection: [Errno 61] Connection refused
+[MFLOG|0|2026-11-09T16:12:33.701201Z|runtime|25bc2afb-c6f1-4f05-ada9-bd2d5c937da7]
+[MFLOG|0|2026-11-09T16:12:33.701227Z|runtime|ea9fbf56-333d-4ec8-886d-2b9d3263cc52]The above exception was the direct cause of the following exception:
+[MFLOG|0|2026-11-09T16:12:33.701287Z|runtime|af23c1f2-bd4b-41db-8fe0-7e28346a3a34]
+[MFLOG|0|2026-11-09T16:12:33.701313Z|runtime|d1f5d028-4fde-4f7d-bed5-35f3dd76ba2b]Traceback (most recent call last):
+[MFLOG|0|2026-11-09T16:12:33.701337Z|runtime|d87a2401-0312-40d4-89fe-961177ced666]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/requests/adapters.py", line 696, in send
+[MFLOG|0|2026-11-09T16:12:33.701361Z|runtime|c4641416-b280-409a-ae9d-83d32b9e384a]    resp = conn.urlopen(
+[MFLOG|0|2026-11-09T16:12:33.702137Z|runtime|40d0461f-c85e-4005-a577-6d4e3e600f93]        method=request.method,
+[MFLOG|0|2026-11-09T16:12:33.702485Z|runtime|1833357c-c554-4429-b964-6c2870600f21]    ...<9 lines>...
+[MFLOG|0|2026-11-09T16:12:33.703637Z|runtime|2dbaa4bd-f121-451b-9477-4ddddc78d477]        chunked=chunked,
+[MFLOG|0|2026-11-09T16:12:33.703674Z|runtime|b635e047-9d47-49ef-b5b7-1bb2bfd9cba1]    )
+[MFLOG|0|2026-11-09T16:12:33.703714Z|runtime|f55d3e9c-bde0-4698-a451-b27012bee28d]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+[MFLOG|0|2026-11-09T16:12:33.703752Z|runtime|73ea0658-71c0-40b8-99dc-916bde248dcd]    return self.urlopen(
+[MFLOG|0|2026-11-09T16:12:33.704225Z|runtime|98be5958-3078-4e50-aea0-008557e5dbd8]           ~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:12:33.704251Z|runtime|3e7a9740-895d-46b1-ab44-12fe2707a421]        method,
+[MFLOG|0|2026-11-09T16:12:33.704294Z|runtime|d0cdb6e0-7310-45a5-86ff-46dec453cde0]        ^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.705040Z|runtime|87e98337-2f4d-4c67-bd75-0f4f2e73b88c]    ...<13 lines>...
+[MFLOG|0|2026-11-09T16:12:33.706283Z|runtime|23fb66e9-5a09-4f05-b9e2-e7247ce293e9]        response_kw,
+[MFLOG|0|2026-11-09T16:12:33.707724Z|runtime|9d9464d4-af57-47d0-aefe-45b700e63446]        ^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.708435Z|runtime|a9236540-c0e4-4bb4-ac36-63e28e4062e2]    )
+[MFLOG|0|2026-11-09T16:12:33.708470Z|runtime|caacf8ab-3b36-431b-8e07-21552b0d1da2]    ^
+[MFLOG|0|2026-11-09T16:12:33.708498Z|runtime|a645cee4-3d55-446a-bd0e-1869ae37da10]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+[MFLOG|0|2026-11-09T16:12:33.708523Z|runtime|a10c7515-924e-4996-9683-76bd425cca69]    return self.urlopen(
+[MFLOG|0|2026-11-09T16:12:33.708911Z|runtime|9f1f34fd-64d2-4bf3-a61f-fffda5fd1c48]           ~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:12:33.709339Z|runtime|7379a96f-2da4-4ade-96d6-df1c3c0480db]        method,
+[MFLOG|0|2026-11-09T16:12:33.709686Z|runtime|77cbc3ea-a2ff-450e-b068-f7f2552235c3]        ^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.710188Z|runtime|5109eebe-7d54-4831-86c5-4a5d9230ab7a]    ...<13 lines>...
+[MFLOG|0|2026-11-09T16:12:33.711773Z|runtime|ac1d68c9-e01c-4c1f-ab63-9f6ba6b780b6]        response_kw,
+[MFLOG|0|2026-11-09T16:12:33.713265Z|runtime|9d03e852-dcaf-4da1-a3dc-8c79761cd16d]        ^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.715512Z|runtime|9c19bdb1-ca98-490a-9d2a-17116e9478eb]    )
+[MFLOG|0|2026-11-09T16:12:33.715541Z|runtime|be05ace5-3457-480f-9681-07bd02659251]    ^
+[MFLOG|0|2026-11-09T16:12:33.715566Z|runtime|3b7fc27f-6da6-4c0d-afcb-0275227cbc00]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 886, in urlopen
+[MFLOG|0|2026-11-09T16:12:33.715592Z|runtime|ede4f457-70a4-4a45-8be2-40caba6b1a41]    return self.urlopen(
+[MFLOG|0|2026-11-09T16:12:33.715616Z|runtime|c13eeab6-961d-4dec-a065-4ec8335113e7]           ~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:12:33.715643Z|runtime|13bfbd22-ab48-44f8-a81a-0eb24d0dd7b1]        method,
+[MFLOG|0|2026-11-09T16:12:33.715667Z|runtime|30cdb30f-4d72-42e5-99ce-69b96c204c65]        ^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.715689Z|runtime|c2f06110-8f76-4f29-a2d8-554e160d5b3a]    ...<13 lines>...
+[MFLOG|0|2026-11-09T16:12:33.715727Z|runtime|214e2c95-30b8-424d-9a1b-aac3c2c6e0a2]        response_kw,
+[MFLOG|0|2026-11-09T16:12:33.716598Z|runtime|a4688244-88c9-47af-a1d6-9fc51de93ff8]        ^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.717288Z|runtime|4467863e-ec98-4d58-b809-895e56d215a0]    )
+[MFLOG|0|2026-11-09T16:12:33.718015Z|runtime|ea7291c5-1200-47b7-b3a9-d393f93dce81]    ^
+[MFLOG|0|2026-11-09T16:12:33.718091Z|runtime|154bac97-ab63-4cc9-b0e6-ccb0b12fc0a7]  [Previous line repeated 4 more times]
+[MFLOG|0|2026-11-09T16:12:33.718129Z|runtime|9d52a8ad-5654-43c8-95b9-5992c4c887fc]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+[MFLOG|0|2026-11-09T16:12:33.718154Z|runtime|ad3774e5-62c2-4bb3-b12a-3b33b40f8f35]    retries = retries.increment(
+[MFLOG|0|2026-11-09T16:12:33.718440Z|runtime|67f03664-1fd1-4744-a14d-25cffd826656]        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+[MFLOG|0|2026-11-09T16:12:33.718465Z|runtime|cd068f99-34b0-49c9-837c-1cb9cc442dc6]    )
+[MFLOG|0|2026-11-09T16:12:33.718488Z|runtime|0cdf43e2-be0e-4467-949a-4b231520d0cf]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/urllib3/util/retry.py", line 555, in increment
+[MFLOG|0|2026-11-09T16:12:33.718525Z|runtime|a415087a-93b3-4255-8466-7f5df1e158d3]    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+[MFLOG|0|2026-11-09T16:12:33.718551Z|runtime|9576013f-cca1-4c5d-91e5-7750776ba940]    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.718580Z|runtime|7e28b45a-f399-4715-8ad0-110cefb2fba6]urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=tribunal_risco_recurso (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5001): Failed to establish a new connection: [Errno 61] Connection refused"))
+[MFLOG|0|2026-11-09T16:12:33.719468Z|runtime|700fe4b4-13a0-410a-abec-4615ec8b1806]
+[MFLOG|0|2026-11-09T16:12:33.719832Z|runtime|8b2c028d-767f-423d-8c13-6cfc6ff7a68d]During handling of the above exception, another exception occurred:
+[MFLOG|0|2026-11-09T16:12:33.719865Z|runtime|52663c64-aec0-4e32-a55e-9719ece16e59]
+[MFLOG|0|2026-11-09T16:12:33.719913Z|runtime|f82e329f-d717-43c0-9f2e-1381fa5f6bfd]Traceback (most recent call last):
+[MFLOG|0|2026-11-09T16:12:33.720019Z|runtime|02a957d6-1213-454c-8e8f-f8b3524b996c]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/utils/rest_utils.py", line 373, in http_request
+[MFLOG|0|2026-11-09T16:12:33.720053Z|runtime|46fe50a7-3753-43fa-bccf-ad72f9f3b231]    return _get_http_response_with_retries(
+[MFLOG|0|2026-11-09T16:12:33.720082Z|runtime|2567c2b4-506c-46ec-9745-a55ea27e35a3]        method,
+[MFLOG|0|2026-11-09T16:12:33.721160Z|runtime|95cb9068-7a3f-4a1c-9c41-a285fbd1f7ae]    ...<12 lines>...
+[MFLOG|0|2026-11-09T16:12:33.721202Z|runtime|e5706b25-f764-478e-a671-be258e320124]        kwargs,
+[MFLOG|0|2026-11-09T16:12:33.721277Z|runtime|c99cf28e-bd1b-4cd1-84a2-3098ecb62ea5]    )
+[MFLOG|0|2026-11-09T16:12:33.721319Z|runtime|33ae1848-b9dc-483a-9e06-ec7744ff273c]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/utils/request_utils.py", line 322, in _get_http_response_with_retries
+[MFLOG|0|2026-11-09T16:12:33.721361Z|runtime|c166e29c-e1a5-4e3b-89cc-aee2d9b9c3d1]    return session.request(method, url, allow_redirects=allow_redirects, kwargs)
+[MFLOG|0|2026-11-09T16:12:33.721391Z|runtime|a5aa8eb5-ba97-4d59-942e-56dd73df52b0]           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.721422Z|runtime|85f872cf-3b06-44b5-a449-4048775b93c5]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/requests/sessions.py", line 651, in request
+[MFLOG|0|2026-11-09T16:12:33.722339Z|runtime|4149e1e4-24be-4af3-9caa-577e2421dfe8]    resp = self.send(prep, send_kwargs)
+[MFLOG|0|2026-11-09T16:12:33.722368Z|runtime|09713f84-a66b-4541-8ed8-1affbcf19bfd]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/requests/sessions.py", line 784, in send
+[MFLOG|0|2026-11-09T16:12:33.722395Z|runtime|e066c228-86f1-44ed-924e-b10c750e09c8]    r = adapter.send(request, kwargs)
+[MFLOG|0|2026-11-09T16:12:33.722570Z|runtime|1446c024-7d0a-4deb-9835-33b4cf9c2d97]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/requests/adapters.py", line 729, in send
+[MFLOG|0|2026-11-09T16:12:33.722636Z|runtime|64edb6a4-341f-467d-ac25-83cffd1c9a73]    raise ConnectionError(e, request=request)
+[MFLOG|0|2026-11-09T16:12:33.723107Z|runtime|233a39bb-17cb-447e-9e18-13634f4f3510]requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=tribunal_risco_recurso (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5001): Failed to establish a new connection: [Errno 61] Connection refused"))
+[MFLOG|0|2026-11-09T16:12:33.723138Z|runtime|f8ca0b74-98d9-46e2-b12d-d020406d9839]
+[MFLOG|0|2026-11-09T16:12:33.723205Z|runtime|a8f8e34b-aea3-4556-a9a7-0e4e0c4efafb]During handling of the above exception, another exception occurred:
+[MFLOG|0|2026-11-09T16:12:33.723284Z|runtime|bf84184e-0c39-4769-8601-ebca730d8cee]
+[MFLOG|0|2026-11-09T16:12:33.723329Z|runtime|08339920-136c-4fef-a892-4ca6405d2c8b]Traceback (most recent call last):
+[MFLOG|0|2026-11-09T16:12:33.723360Z|runtime|8d17bcf0-5902-4a86-8be1-40185d820134]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/cli.py", line 739, in main
+[MFLOG|0|2026-11-09T16:12:33.723702Z|runtime|7a998b19-5581-450a-ba36-8038b9f56721]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2026-11-09T16:12:33.723727Z|runtime|b8d1ecfd-d3ea-48c3-a384-4a8d82d582a8]    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.726103Z|runtime|7291cc6c-9b3e-46ef-8bfd-b7ebc97c7a42]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2026-11-09T16:12:33.726201Z|runtime|93441d67-bbb6-44ea-8a1e-84395b8ed353]    return self.main(args, kwargs)
+[MFLOG|0|2026-11-09T16:12:33.727128Z|runtime|b1981b5b-849a-416a-851b-cd00eec9a70a]           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.727182Z|runtime|e40bfc61-1ba9-46dd-9024-5263d12af8c8]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2026-11-09T16:12:33.727239Z|runtime|c98d571d-a533-435b-a134-cd77401a98b0]    rv = self.invoke(ctx)
+[MFLOG|0|2026-11-09T16:12:33.727267Z|runtime|c5ec7530-8e56-4977-a904-50e07af4c7e4]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2026-11-09T16:12:33.727401Z|runtime|5ec253a1-32d8-4081-b4f1-4a5509eff1f4]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2026-11-09T16:12:33.727551Z|runtime|8332e5ba-e32d-4a07-b33b-a74269ee276e]                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.727639Z|runtime|fabd1e4f-4426-4beb-a89d-895650cce0b1]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2026-11-09T16:12:33.727790Z|runtime|e6198163-2f9d-4e9f-a5ff-c403a5fcdd1f]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2026-11-09T16:12:33.727903Z|runtime|363583d1-29da-4609-95e0-3d8ff17ff4d6]           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.728042Z|runtime|4c70b026-f207-4860-953d-9d06c5996fe3]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2026-11-09T16:12:33.728154Z|runtime|81b745a7-37b4-4db2-b77d-0f5c03fec864]    return callback(args, kwargs)
+[MFLOG|0|2026-11-09T16:12:33.728427Z|runtime|743ad7da-20ee-44b1-83eb-dc14a2f43b4f]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2026-11-09T16:12:33.728471Z|runtime|d98955ca-6089-4cbc-bb4b-a0176e005f67]    return func(args, kwargs)
+[MFLOG|0|2026-11-09T16:12:33.728496Z|runtime|703a6d4d-b2d2-42e8-ac9d-6a9c559660ee]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2026-11-09T16:12:33.728524Z|runtime|178f802a-d6f3-431f-9d49-0d76a678d3b4]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2026-11-09T16:12:33.728548Z|runtime|663870fc-e026-456e-9bc8-dffcf370c22c]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/cli_components/step_cmd.py", line 171, in step
+[MFLOG|0|2026-11-09T16:12:33.728572Z|runtime|9daf76f7-044c-48cf-81c1-f9ad86a97483]    task.run_step(
+[MFLOG|0|2026-11-09T16:12:33.729541Z|runtime|9e701519-5064-404e-a990-47b6d94376b0]    ~~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:12:33.729665Z|runtime|11e10c55-e917-4fd6-ba4c-219cc45fa307]        step_name,
+[MFLOG|0|2026-11-09T16:12:33.730180Z|runtime|f88af382-9f90-4672-85bb-8c619284fabc]        ^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.730303Z|runtime|b9d483f4-9000-4794-acd9-a7026133554a]    ...<6 lines>...
+[MFLOG|0|2026-11-09T16:12:33.731095Z|runtime|ed875d9f-5ce2-4f3e-8184-d39879c09497]        max_user_code_retries,
+[MFLOG|0|2026-11-09T16:12:33.731151Z|runtime|c3b628f2-d5b0-4f34-b80a-0f0a9204efb6]        ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.733977Z|runtime|0d6d7a4d-a59d-4203-b51b-e4b48fa5b738]    )
+[MFLOG|0|2026-11-09T16:12:33.734069Z|runtime|6985b8df-8a66-41ae-b869-bd6f511f9640]    ^
+[MFLOG|0|2026-11-09T16:12:33.734100Z|runtime|deacaa0c-d40a-4422-96fe-7a74763293cd]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/task.py", line 938, in run_step
+[MFLOG|0|2026-11-09T16:12:33.734147Z|runtime|edd59f41-151f-4353-a3a8-8ce2ff4f4efc]    self._exec_step_function(step_func, orig_step_func)
+[MFLOG|0|2026-11-09T16:12:33.734196Z|runtime|030b40b3-6046-4e9e-8ee4-71d433755a4e]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.734248Z|runtime|73eb4faf-03d3-4d47-9403-8372dca53f87]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/task.py", line 147, in _exec_step_function
+[MFLOG|0|2026-11-09T16:12:33.734307Z|runtime|c4e5aeb1-27b5-48fd-8b94-620e1c23f82d]    raise raised_exception
+[MFLOG|0|2026-11-09T16:12:33.734489Z|runtime|e3259862-76b9-4010-aa4e-610d353f8a6f]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/task.py", line 113, in _exec_step_function
+[MFLOG|0|2026-11-09T16:12:33.735773Z|runtime|c8d29c32-f6ec-45b7-aa59-d2cfb89ede95]    step_function()
+[MFLOG|0|2026-11-09T16:12:33.735823Z|runtime|a2c00d6d-f0c3-4b13-b98a-50e87181c165]    ~~~~~~~~~~~~~^^
+[MFLOG|0|2026-11-09T16:12:33.735849Z|runtime|9a9cf595-ef09-4347-aa90-41a09945944f]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/pipeline_tribunal.py", line 138, in train_model
+[MFLOG|0|2026-11-09T16:12:33.735873Z|runtime|1449f13a-cd7b-4205-9037-8f49208db125]    mlflow.set_experiment("tribunal_risco_recurso")
+[MFLOG|0|2026-11-09T16:12:33.735902Z|runtime|8b786ea6-660b-4e96-bee6-8dfedf4754a4]    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.735928Z|runtime|809a5021-b7a8-4ce4-8da9-51c39b41d61e]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/tracking/fluent.py", line 208, in set_experiment
+[MFLOG|0|2026-11-09T16:12:33.735951Z|runtime|976cc5e9-2e8e-4ef2-91fa-68e2a91434d7]    experiment = client.get_experiment_by_name(experiment_name)
+[MFLOG|0|2026-11-09T16:12:33.736006Z|runtime|dd5a8a88-a8d1-42f8-b603-bcbd1ad18f62]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/tracking/_tracking_service/client.py", line 282, in get_experiment_by_name
+[MFLOG|0|2026-11-09T16:12:33.736097Z|runtime|011aaecd-ec2d-4665-8574-42d176aa76ca]    return self.store.get_experiment_by_name(name)
+[MFLOG|0|2026-11-09T16:12:33.736137Z|runtime|d8c6818d-477a-47d1-95d3-a72590b6a72f]           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+[MFLOG|0|2026-11-09T16:12:33.736270Z|runtime|6bf9d25e-abca-4947-9f67-93b43dd18cf2]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/store/tracking/rest_store.py", line 1552, in get_experiment_by_name
+[MFLOG|0|2026-11-09T16:12:33.736296Z|runtime|2eeda76d-b48c-4ea3-9191-d001dc5170ad]    response_proto = self._call_endpoint(GetExperimentByName, req_body)
+[MFLOG|0|2026-11-09T16:12:33.736322Z|runtime|16323f9c-dfa4-4e03-8a86-f1b89fcb57e3]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/store/tracking/rest_store.py", line 275, in _call_endpoint
+[MFLOG|0|2026-11-09T16:12:33.736346Z|runtime|3ff4bab1-93c0-4067-b6af-bd634042d92e]    return call_endpoint(
+[MFLOG|0|2026-11-09T16:12:33.736375Z|runtime|5e896501-420b-4925-ad01-601c51686062]        self.get_host_creds(),
+[MFLOG|0|2026-11-09T16:12:33.736441Z|runtime|66d817f5-c9e1-4caa-be2d-1700682d52d1]    ...<4 lines>...
+[MFLOG|0|2026-11-09T16:12:33.737518Z|runtime|cc5cd06d-53d0-404a-9d54-d0e25e57b4e5]        retry_timeout_seconds=retry_timeout_seconds,
+[MFLOG|0|2026-11-09T16:12:33.737697Z|runtime|e5dc382a-c9df-4f94-a90b-228bb1cb4519]    )
+[MFLOG|0|2026-11-09T16:12:33.737797Z|runtime|9c0126fb-4a48-4989-afed-ecebb539f7f2]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/utils/rest_utils.py", line 753, in call_endpoint
+[MFLOG|0|2026-11-09T16:12:33.738649Z|runtime|78ec2400-0b85-4e8c-ad31-09f46921ada1]    response = http_request(call_kwargs)
+[MFLOG|0|2026-11-09T16:12:33.738683Z|runtime|e2b12c59-efa2-48a3-8a82-0538c93a9194]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/mlflow/utils/rest_utils.py", line 398, in http_request
+[MFLOG|0|2026-11-09T16:12:33.738708Z|runtime|e62eea8e-f420-4405-b10c-bca3426504a2]    raise MlflowException(f"API request to {url} failed with exception {e}")
+[MFLOG|0|2026-11-09T16:12:33.738764Z|runtime|e3f4dee4-2ae6-40de-9edd-ae7bd34dd508]mlflow.exceptions.MlflowException: API request to http://localhost:5001/api/2.0/mlflow/experiments/get-by-name failed with exception HTTPConnectionPool(host='localhost', port=5001): Max retries exceeded with url: /api/2.0/mlflow/experiments/get-by-name?experiment_name=tribunal_risco_recurso (Caused by NewConnectionError("HTTPConnection(host='localhost', port=5001): Failed to establish a new connection: [Errno 61] Connection refused"))
+[MFLOG|0|2026-11-09T16:12:33.738800Z|runtime|7eaae70c-ec15-4c16-8bdd-dd5480136ef5]
+[MFLOG|0|2026-11-09T16:12:33.760491Z|runtime|e9daf048-45e6-433f-abcd-74eea59ec81b]Task failed.

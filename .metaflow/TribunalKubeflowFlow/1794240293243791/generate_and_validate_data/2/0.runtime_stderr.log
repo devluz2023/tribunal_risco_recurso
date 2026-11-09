@@ -1,0 +1,50 @@
+[MFLOG|0|2026-11-09T16:05:15.034134Z|runtime|f8f32c72-f381-4eeb-b91d-cfb4539db0ad]<flow TribunalKubeflowFlow step generate_and_validate_data> failed:
+[MFLOG|0|2026-11-09T16:05:15.406218Z|runtime|f4c859b6-6061-4357-97d5-caa10017acbb]    Internal error
+[MFLOG|0|2026-11-09T16:05:15.409842Z|runtime|de655c8b-5224-4331-ac41-c44d17a6c4da]Traceback (most recent call last):
+[MFLOG|0|2026-11-09T16:05:15.410297Z|runtime|43d3caa4-9917-4380-bae7-9c3bf1a23b03]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/cli.py", line 739, in main
+[MFLOG|0|2026-11-09T16:05:15.410374Z|runtime|d9b5881c-6eaf-4bf3-a77a-94dff7670b4b]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2026-11-09T16:05:15.411415Z|runtime|c9e1066b-d163-4bb3-a2aa-65787cf02b80]    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:05:15.413146Z|runtime|bd3844e0-5a0c-4691-8630-171c6f536195]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2026-11-09T16:05:15.414191Z|runtime|821d7096-e02d-4305-afef-54e3f2a78c27]    return self.main(args, kwargs)
+[MFLOG|0|2026-11-09T16:05:15.414396Z|runtime|bf1fdfb7-d69d-48d1-bdd0-161389e45287]           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:05:15.414641Z|runtime|3d25831c-8a27-4794-89c2-65ef48920d2e]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2026-11-09T16:05:15.416324Z|runtime|f6bf7ff0-db2e-444b-9745-2b360bc7ba0f]    rv = self.invoke(ctx)
+[MFLOG|0|2026-11-09T16:05:15.417810Z|runtime|e2beb4c8-9d30-4985-ba55-b93c8165c057]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/cli_components/utils.py", line 69, in invoke
+[MFLOG|0|2026-11-09T16:05:15.418300Z|runtime|8cbc37b3-5966-43b8-8df7-a6ec3cb40944]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2026-11-09T16:05:15.418667Z|runtime|a601dc44-eb7c-442a-818f-3e0b5575a4c2]                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+[MFLOG|0|2026-11-09T16:05:15.418739Z|runtime|ce6b97ad-53c9-40be-b552-df0137c5fe88]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2026-11-09T16:05:15.418776Z|runtime|0caba99f-06e1-4048-95ba-7838ae99fb6e]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2026-11-09T16:05:15.419557Z|runtime|be712348-f59a-4a89-b778-77fbf390cfee]           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:05:15.425363Z|runtime|fdb0e12f-68dd-487a-806b-50c84aea87f4]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2026-11-09T16:05:15.426144Z|runtime|8b839d13-8968-42a6-9518-9ba97da3f513]    return callback(args, kwargs)
+[MFLOG|0|2026-11-09T16:05:16.857903Z|runtime|10eeb519-92dd-46b0-8684-565a5bdeda8c]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2026-11-09T16:05:16.858951Z|runtime|4d4344e1-309d-4ddb-80ec-810e7df01cac]    return func(args, kwargs)
+[MFLOG|0|2026-11-09T16:05:16.859480Z|runtime|06a98a26-6ab4-4883-8836-d540097d3a9f]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2026-11-09T16:05:16.859515Z|runtime|87e7ab4d-f7c7-4a7b-88b2-051d8b6ebbb9]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2026-11-09T16:05:16.859546Z|runtime|134df4ef-078c-485c-8cae-3afa91443322]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/cli_components/step_cmd.py", line 171, in step
+[MFLOG|0|2026-11-09T16:05:16.859985Z|runtime|748fed49-5185-44fe-8be0-b521c8ebb369]    task.run_step(
+[MFLOG|0|2026-11-09T16:05:16.860038Z|runtime|f4adea0b-52a6-4887-abc3-c3c5f6892bdc]    ~~~~~~~~~~~~~^
+[MFLOG|0|2026-11-09T16:05:16.860071Z|runtime|7936b6af-8f98-4baa-b2b6-30cb65cf18c1]        step_name,
+[MFLOG|0|2026-11-09T16:05:16.860105Z|runtime|48b21d8d-83ed-4b45-acac-5f371a4401c2]        ^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:05:16.860136Z|runtime|0429805c-f821-4f85-b419-996e39478782]    ...<6 lines>...
+[MFLOG|0|2026-11-09T16:05:16.860162Z|runtime|a1fcdb08-922d-41f0-815f-8dccfb04ee66]        max_user_code_retries,
+[MFLOG|0|2026-11-09T16:05:16.860186Z|runtime|0f249734-a10e-430c-b8e0-da40e426dca8]        ^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:05:16.860208Z|runtime|d1b3be63-576e-4239-992b-1c0b56b17df3]    )
+[MFLOG|0|2026-11-09T16:05:16.860232Z|runtime|20762c73-49f4-4eb0-9a3e-a56df3c8d18b]    ^
+[MFLOG|0|2026-11-09T16:05:16.860255Z|runtime|3256d3a5-5e7b-430f-a7e4-cb258267d12c]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/task.py", line 938, in run_step
+[MFLOG|0|2026-11-09T16:05:16.860630Z|runtime|a9452157-4baf-4e04-a794-a293acbafcfe]    self._exec_step_function(step_func, orig_step_func)
+[MFLOG|0|2026-11-09T16:05:16.860656Z|runtime|400fcfcf-0694-400f-904c-3057d4e5c382]    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:05:16.860679Z|runtime|e1167265-646c-4743-8cc0-0183368ae6d2]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/task.py", line 147, in _exec_step_function
+[MFLOG|0|2026-11-09T16:05:16.860702Z|runtime|eeb42350-a0e9-4cb9-81d6-55f14a0328fa]    raise raised_exception
+[MFLOG|0|2026-11-09T16:05:16.860724Z|runtime|d45878cc-c484-4a73-af2b-7b1de1280256]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/venv/lib/python3.13/site-packages/metaflow/task.py", line 113, in _exec_step_function
+[MFLOG|0|2026-11-09T16:05:16.860761Z|runtime|29f9e7c9-d038-47f2-bfa4-fe40b6187f7a]    step_function()
+[MFLOG|0|2026-11-09T16:05:16.860791Z|runtime|0591bffc-9613-46a5-820f-4dc4d5ee39c3]    ~~~~~~~~~~~~~^^
+[MFLOG|0|2026-11-09T16:05:16.860818Z|runtime|cf8e4764-95c5-46a6-ba98-bb2a36628b2b]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/pipeline_tribunal.py", line 76, in generate_and_validate_data
+[MFLOG|0|2026-11-09T16:05:16.860841Z|runtime|b45ff855-5810-4dad-af01-a79da3318b2e]    validar_dados_brutos(self.raw_df)
+[MFLOG|0|2026-11-09T16:05:16.860862Z|runtime|6928572a-65de-4d0d-96c2-7f4857fc2e16]    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:05:16.860884Z|runtime|b125a59a-7fba-4d7e-b627-b2bb8559ffc8]  File "/Users/fabiojuliodaluz/Documents/tribunal_risco_recurso/pipeline_tribunal.py", line 23, in validar_dados_brutos
+[MFLOG|0|2026-11-09T16:05:16.861236Z|runtime|a089831a-4879-43d6-9aab-f704c5df4a00]    datasource = context.sources.add_pandas("pandas_datasource")
+[MFLOG|0|2026-11-09T16:05:16.861260Z|runtime|7438fbad-2ddf-4981-8b96-0c8d2c46f4fd]                 ^^^^^^^^^^^^^^^
+[MFLOG|0|2026-11-09T16:05:16.861283Z|runtime|0b8392ad-e6a9-4a71-9a62-adbd9716f7e9]AttributeError: 'EphemeralDataContext' object has no attribute 'sources'
+[MFLOG|0|2026-11-09T16:05:16.861305Z|runtime|1fbc5f68-62ab-413d-b610-0cf61bc4900f]
+[MFLOG|0|2026-11-09T16:05:16.868032Z|runtime|8731bb0f-e299-4de6-aa0d-ab020c9f894a]Task failed.
